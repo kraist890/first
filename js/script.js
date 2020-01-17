@@ -46,3 +46,31 @@ console.log(one && second); // false, т.к есть и правда и ложь
 console.log(one || second); // true если хотя бы одно правда
 // !second - обратное значение переменной, из-за ! 
 
+// УСЛОВИЯ
+
+let num = 60;
+
+if (num < 50) {
+	console.log("Мало")
+} else if (num > 100) {
+	console.log("Много")
+} else {
+	console.log("Верно")
+};
+
+(num == 50) ? console.log("Верно") : console.log("Неверно");
+
+switch (num) {
+	case num < 49:
+		console.log('Неверно');
+		break;
+	case num > 100:
+		console.log('Много');
+		break;
+	case 60:
+		console.log('Верно');
+		break;
+	default:
+		console.log('Что-то пошло не так');
+		break;
+}
